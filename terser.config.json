@@ -1,0 +1,19 @@
+{
+  "compress": {
+    "passes": 2,
+    "drop_console": false,
+    "unsafe": true,
+    "unsafe_comps": true,
+    "unsafe_math": true,
+    "unsafe_proto": true
+  },
+  "mangle": {
+    "toplevel": false,
+    "keep_classnames": true,
+    "properties": false
+  },
+  "format": {
+    "comments": false,
+    "preamble": "/* @zzev/toastify */"
+  }
+}
