@@ -1,18 +1,26 @@
 # @zzev/toastify
 
-A lightweight, elegant toast notification system for the browser with TypeScript support, theme customization, and smooth animations.
+A **super lightweight** (~5KB minified), elegant toast notification system for the browser. **Zero dependencies**, pure vanilla JavaScript with full TypeScript support.
 
 [![npm version](https://img.shields.io/npm/v/@zzev/toastify.svg)](https://www.npmjs.com/package/@zzev/toastify)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue.svg)](https://www.typescriptlang.org/)
+[![Bundle Size](https://img.shields.io/bundlephobia/minzip/@zzev/toastify)](https://bundlephobia.com/package/@zzev/toastify)
+[![No Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/@zzev/toastify)
 
 ## ✨ Features
 
+- ⚡ **Super Lightweight** - Only ~5KB minified, minimal footprint on your bundle
+- 📦 **Zero Dependencies** - No external libraries, pure vanilla JavaScript
+- 🚀 **Highly Efficient** - Optimized performance with minimal DOM operations
 - 🎨 **Theme Support** - Light, dark, and auto (follows system preferences)
 - 📱 **Responsive** - Different animations for mobile and desktop
 - 🎭 **Smooth Animations** - Beautiful fade-in, slide, and fade-out effects
-- 📦 **Zero Dependencies** - Lightweight and self-contained
 - 🔷 **TypeScript Native** - Full type safety and IntelliSense support
 - ⚡ **Easy to Use** - Simple API with powerful customization options
+
+## 🎬 Demo
+
+![Toastify Demo](https://github.com/zzev/toastify/raw/main/assets/demo.gif)
 
 ## 📦 Installation
 
@@ -40,7 +48,7 @@ await toast.init({
   styles: theme.styles,
   messages: [
     {
-      img: 'https://example.com/logo.png',
+      img: 'https://placehold.co/64x64',
       title: 'Welcome!',
       time: 'now',
       text: 'Your notification message here'
@@ -107,20 +115,6 @@ Creates a new theme instance.
 **Methods:**
 - `setTheme(theme)`: Updates the theme
 
-### TypeScript Types
-
-```typescript
-import type {
-  ToastifyMessageProps,
-  ToastifyMessagesProps,
-  ToastifyDelaysProps,
-  ToastifyOptionsProps,
-  ToastifyStylesProps,
-  ToastifyThemeMapProps,
-  ToastifyThemeProp,
-} from '@zzev/toastify';
-```
-
 ## 🎯 Advanced Examples
 
 ### Custom Delays Configuration
@@ -142,19 +136,19 @@ await toast.init({
 ```typescript
 const messages = [
   {
-    img: '/icons/success.png',
+    img: 'https://placehold.co/64x64/00ff00/white',
     title: 'Success',
     time: 'now',
     text: 'Operation completed successfully'
   },
   {
-    img: '/icons/info.png',
+    img: 'https://placehold.co/64x64/0099ff/white',
     title: 'Update Available',
     time: '1m ago',
     text: 'A new version is ready to install'
   },
   {
-    img: '/icons/warning.png',
+    img: 'https://placehold.co/64x64/ffaa00/white',
     title: 'Warning',
     time: '5m ago',
     text: 'Please review your settings'
@@ -216,36 +210,6 @@ npm install
 # Build the project
 npm run build
 ```
-
-### Build Commands
-
-```bash
-# Compile TypeScript to JavaScript
-npm run build
-
-# Create minified versions (for releases)
-npm run minify
-```
-
-### Project Structure
-
-```
-toastify/
-├── src/
-│   ├── toastify.core.ts    # Core toast functionality
-│   └── toastify.theme.ts   # Theme management
-├── index.ts                # Main entry point
-├── types.ts                # TypeScript type definitions
-├── tsconfig.json           # TypeScript configuration
-└── package.json            # Package configuration
-```
-
-### Code Style
-
-- Use TypeScript for all new code
-- Follow existing code patterns
-- Maintain type safety
-- Keep code clean and well-documented
 
 ## 📄 License
 

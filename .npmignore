@@ -1,0 +1,13 @@
+# Assets for documentation only
+assets/
+
+# Source files
+src/
+tsconfig.json
+terser.config.json
+
+# Development files
+.git/
+.gitignore
+*.md
+!README.md
